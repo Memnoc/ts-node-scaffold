@@ -4,24 +4,24 @@ Easy scaffold to start developing node packages to publish in the registry.
 
 ### Dependencies
 
-# Create project
+**Create project**
 
 mkdir gig
 cd gig
 pnpm init
 
-# Add TypeScript and core dependencies
+**Add TypeScript and core dependencies**
 
 pnpm add -D typescript @types/node tsup
 pnpm add clipanion enquirer better-cli-alerts
 
-# Dev tools and best practices
+**Dev tools and best practices**
 
 pnpm add -D prettier eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin
 pnpm add -D vitest
 pnpm add -D @changesets/cli # For version management
 
-# Create basic structure
+**Create basic structure**
 
 mkdir src
 mkdir src/commands
@@ -29,19 +29,19 @@ mkdir src/utils
 mkdir src/types
 mkdir tests
 
-# Initialize TypeScript
+**Initialize TypeScript**
 
 pnpm tsc --init
 OR
 npx tsc --init
 
-# Initialize ESLint
+**Initialize ESLint**
 
 pnpm eslint --init
 OR
 npx eslint --init
 
-# Initialize Prettier
+**Initialize Prettier**
 
 echo {} > .prettierrc.json
 
